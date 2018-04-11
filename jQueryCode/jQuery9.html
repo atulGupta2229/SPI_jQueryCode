@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#disc").click(function(){
+                $("#rupee").wrapInner("<strike>");
+                $("#afdisc").css("display", "block");
+            });
+        });
+    </script>
+    <style>
+        #box{
+            height: 480px;
+            width: 300px;
+            background: #e4e4e4;
+        }
+        #rupee{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #image{
+            height: 200px;
+        }
+        p{
+            padding: 6%;
+            text-align: justify;
+        }
+        #afdisc{
+            display: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="image">
+            <img src="product.jpg" alt="" width="100%">
+        </div>
+        <p>
+            <span id="price" style="font-size: 25px;">Price: </span><span id="rupee">&#8377; 9999/-</span>
+            <span id="afdisc">&#8377; 8999/-</span><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dicta reiciendis quos, expedita architecto suscipit repellat neque nam velit, dolorem veniam atque dolor placeat corporis qui repudiandae! Officia, consequuntur facilis!
+            
+  
+        </p>      <button id="disc">Apply Discount</button> <button>Buy now</button>
+    </div>
+</body>
+</html>

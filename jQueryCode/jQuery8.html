@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#on").click(function(){
+            //     $("#box").removeClass("bulbOff");
+            //     $("#box").addClass("bulbOn");
+            // });
+            // $("#off").click(function(){
+            //     $("#box").removeClass("bulbOn");
+            //     $("#box").addClass("bulbOff");
+            // });
+
+            $("#on").click(function(){
+                $("#box").toggleClass("bulbOn");
+                if($("#on").text()=="ON"){
+                    $("#on").text("OFF");
+                }
+                else{
+                    $("#on").text("ON");
+                }
+            });
+        });
+    </script>
+    <style>
+        #box{
+            height: 500px;
+            width: 500px;
+        }
+        .bulbOff{
+            background: url(off.png) center center no-repeat;
+            background-size: contain;
+        }
+        .bulbOn{
+            background: url(on.png) center center no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="bulbOff">
+
+    </div>
+    <button id="on">ON</button>
+    <!-- <button id="off">OFF</button> -->
+</body>
+</html>

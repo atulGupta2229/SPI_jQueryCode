@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#box").mousemove(function(e){
+                $("img").css({
+                    marginTop : -1*e.screenY*0.2+"px",
+                    marginRight: e.screenX*0.3+"px",
+                    marginRight: e.screenX*0.3+"px",
+                });
+            });
+        });
+    </script>
+    <style>
+        #box{
+            height: 900px;
+            width: 100%;
+            /* background: #54effa; */
+            padding-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p class="para1">
+        Just a paragraph!
+    </p>
+    <p class="para2">
+        Another Paragraph.
+    </p>
+    <input type="text" id="txt">
+    <button>
+        CLicK
+    </button> -->
+    <center>
+            <div id="box">
+                
+            <img src="dp.png" alt="" width="10%">
+        
+            </div>
+    </center>
+</body>
+</html>

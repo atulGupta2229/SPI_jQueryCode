@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <style>
+    p{
+        display: none;
+        font-size: 4em;
+    }
+    </style>
+</head>
+<body>
+    <button id="shw">Show</button>
+    <!-- <button id="hide">Hide</button> -->
+    <p style="background: greenyellow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum aspernatur cupiditate sed suscipit recusandae eveniet molestias iste possimus impedit provident maxime excepturi, explicabo quasi quae mollitia error sequi assumenda.
+    </p>
+    <script>
+        $("#shw").click(function(){
+            $("p").toggle(1000, function(){
+                if($("#shw").text()=="Show"){
+                    $("#shw").text("Hide");
+                }
+                else{
+                    $("#shw").text("Show");
+                } 
+            });
+        });
+        // $("#hide").click(function(){
+        //     $("p").hide(2000);
+        // });
+    </script>
+</body>
+</html>

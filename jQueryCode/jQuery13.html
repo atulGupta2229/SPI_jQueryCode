@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <button id="in">Show</button>
+
+    <p style="background-color: gold; font-size: 3em" id="para1">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quisquam impedit magnam eius sunt, vero libero, dolor autem consectetur esse unde recusandae placeat, eligendi blanditiis quibusdam iste perferendis necessitatibus hic!
+    </p>
+    <p style="background-color:greenyellow; font-size: 3em" id="para2">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quisquam impedit magnam eius sunt, vero libero, dolor autem consectetur esse unde recusandae placeat, eligendi blanditiis quibusdam iste perferendis necessitatibus hic!
+    </p>
+
+    <script>
+    $("#in").click(function(){
+        // $("#para1").fadeToggle(2000, function(){
+        //     $("#para2").fadeToggle(1000);
+        // });
+
+        $("p").fadeTo(2000, 0.4);
+    });
+    </script>
+</body>
+</html>

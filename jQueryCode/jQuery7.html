@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $("#btn0").click(function(){
+                $("ul").append("<li>Appended Item</li>");
+            });
+            $("#btn1").click(function(){
+                $("ul").prepend("<li>Prepended Item</li>");
+            });
+            $("#btn2").click(function(){
+                $("ul").before("<h2>Softpro India</h2>")
+            });
+            $("#btn3").click(function(){
+                $("ul").after("<h3>Bridging the gap...</h3>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+    </ul>
+    <button id="btn0">Append item</button>
+    <button id="btn1">Prepend item</button>
+    <button id="btn2">Add Before</button>
+    <button id="btn3">Add After</button>
+</body>
+</html>

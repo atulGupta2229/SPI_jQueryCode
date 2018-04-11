@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#inp2").blur(function(){
+            //     $("#login").removeAttr("disabled");
+            // });
+            $("#btn1").click(function(){
+                $("img").attr("width", "50%");
+            });
+            $("#btn2").click(function(){
+                $("img").removeAttr("width");
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <!-- <form action="#">
+        <input type="text" id="inp1" placeholder="Username"><br>
+        <input type="password" id="inp2" placeholder="Password"><br>
+        <button disabled id="login">Login</button>
+    </form> -->
+    
+    <button id="btn1">Add width</button> <button id="btn2">Remove Width</button>
+    <div style="height: 300px; width: 300px;">
+        <img src="dp.png" id="im">
+    </div>
+</body>
+</html>

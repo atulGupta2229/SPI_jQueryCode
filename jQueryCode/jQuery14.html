@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#btnUp").click(function(){
+            // $("#box").slideToggle(2000);
+            // $("h2").text($("#box").height()+"  "+$("#box").width());
+            $("#box").height(600);
+            $("#box").width(600);
+        });
+        
+        // $("#btnDown").click(function(){
+        //     $("#box").slideDown(2000);
+        // });
+    });
+    </script>
+    <style>
+       #box{
+           height: 500px;
+           width: 800px;
+           background: url(product.jpg)center no-repeat;
+           background-size: cover;
+       }
+    </style>
+</head>
+<body>
+    <button id="btnUp" >SlideUp</button>
+    <!-- <button id="btnDown" >SlideDown</button> -->
+    <div id="box">
+    </div>
+    <h2></h2>
+</body>
+</html>

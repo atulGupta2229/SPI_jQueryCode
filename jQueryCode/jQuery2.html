@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#head").click(function(){
+            //     alert("Head id selected!!");
+            // });
+            // $(".heading").hover(function(){
+            //     alert("Heading Class is selected!!!");
+            // });
+            $("div .heading").click(function(){
+                alert("h1 tag inside div is selected");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div style="height:400px; width: 400px; background: yellow;">
+        <h1 class="heading" id="head">
+            Softpro India
+        </h1>
+    </div>
+</body>
+</html>
